@@ -9,7 +9,7 @@ import {
 } from "./components/share.styled";
 
 const LogoBlockStyled = tw.span`inline-block p-4 bg-gold h-20 w-20 [&>img]:h-full `;
-const LeftNavStyled = tw.aside``;
+const LeftNavStyled = tw.aside`absolute`;
 const GameListItemStyled = tw.li`text-black placeholder:block pr-4 border-0 [&>span]:bg-gold [&>span]:bprder-0 line-1 leading-[2.3rem] [&>span]:px-2 [&>span]:py-2 `;
 const DetailContentStyled = tw.div`flex-1 bg-primary-500 py-2 px-4  rounded-lg`;
 function App() {
@@ -52,7 +52,7 @@ function App() {
               </GameListItemStyled>
             </ul>
           </LeftNavStyled>
-          <SectionContentStyled className="flex flex-row w-full h-[1000px]">
+          <SectionContentStyled className="flex flex-row h-[1000px]">
             <div className="flex-1 pt-[200px]">
               <div>
                 <span className="text-4xl font-bold">Pay 2 Win.</span>

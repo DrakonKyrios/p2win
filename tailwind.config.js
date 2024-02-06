@@ -22,7 +22,17 @@ module.exports = {
           800: "#0D2B3D",
           900: "#0B2230",
         },
-        secondary: "#f95630",
+        secondary: {
+          100: "#FAAF40",
+          200: "#FAAF40",
+          300: "#FAAF40",
+          400: "#FAAF40",
+          500: "#FAAF40",
+          600: "#FAAF40",
+          700: "#FAAF40",
+          800: "#FAAF40",
+          900: "#FAAF40",
+        },
         gold: "#faaf40",
       },
       backgroundImage: {
