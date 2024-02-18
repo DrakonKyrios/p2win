@@ -18,9 +18,9 @@ export const RoadMapPage = () => {
                 <div className="text-xl font-bold">Phase 1</div>
                 <div className="text-sm">Feb 2024 - May 2024</div>
               </div>
-              <span className="absolute z-20 bottom-0 left-0 h-4 w-4 align-middle">
+              <span className="absolute z-20 -bottom-2 -left-2 h-4 w-4 align-middle border-[1px] bg-primary-500 rounded-2xl shadow-lg shadow-black shadow ">
                 <FontAwesomeIcon
-                  className="bg-primary-500"
+                  className="absolute top-0 left-0 z-10"
                   icon={faCheckCircle}
                 />
               </span>

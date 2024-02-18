@@ -2,7 +2,7 @@ import tw from "tailwind-styled-components";
 import { SectionContentStyled } from "./share.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons/faDiscord";
-import { Button } from "@pay2win/storybook";
+import { Button } from "@viewtech-labs/pay2win-library";
 
 const CopyInfoStyled = tw.ul`flex flex-row [&>li]:border-r-2 [&>li]:px-8 [&>li:first-child]:pl-0`;
 const NavParentLiStyled = tw.li`font-bold text-lg`;

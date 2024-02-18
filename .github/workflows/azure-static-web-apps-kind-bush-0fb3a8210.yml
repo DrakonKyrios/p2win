@@ -15,6 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
+      - uses: actions/setup-node@v4
+        with:
+          registry-url: https://npm.fontawesome.com/
+          token: :_authToken=${{ secrets.FONT_AWESOME_AUTH_TOKEN }}
       - uses: actions/checkout@v3
         with:
           submodules: true
@@ -32,7 +36,8 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "dist" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTH_TOKEN }}
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest

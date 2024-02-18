@@ -71,7 +71,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="relative flex-1 flex pt-[200px]">
-            <div className="bg-gold  w-[410px] h-[400px] p-8 z-20">
+            <div className="bg-secondary-500  w-[410px] h-[400px] p-8 z-20">
               <span className="block bg-loot-box bg-cover bg-no-repeat w-full h-full" />
               &nbsp;
             </div>
