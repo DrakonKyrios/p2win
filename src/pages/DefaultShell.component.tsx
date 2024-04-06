@@ -2,9 +2,10 @@ import tw from "tailwind-styled-components";
 import viteLogo from "/vite.svg";
 import Footer from "../components/Footer.component";
 import { Link, Outlet } from "react-router-dom";
-const LogoBlockStyled = tw.span`inline-block p-4 bg-gold h-20 w-20 [&>img]:h-full `;
+const LogoBlockStyled = tw.span`inline-block p-4 bg-secondary-500 h-20 w-20 [&>img]:h-full `;
 
 export default function DefaultShell() {
+  
   return (
     <>
       <header className="h-20 flex">

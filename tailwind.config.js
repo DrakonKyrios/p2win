@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.ts", "./**/*.html", "./src/**/*.tsx"],
   theme: {
+    colors: {
+      white: "#ffffff",
+    },
     extend: {
       screens: {
         sm: "480px",
@@ -10,7 +13,9 @@ module.exports = {
         xl: "1440px",
       },
       colors: {
-        white: "#ffffff",
+        red: {
+          500: "#ff0000",
+        },
         primary: {
           100: "#2F96D6",
           200: "#2881B8",
@@ -33,7 +38,6 @@ module.exports = {
           800: "#FAAF40",
           900: "#FAAF40",
         },
-        gold: "#faaf40",
       },
       backgroundImage: {
         "loot-box": "url('./assets/images/loot-box.png')",
