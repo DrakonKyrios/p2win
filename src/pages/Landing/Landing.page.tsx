@@ -47,27 +47,25 @@ export default function LandingPage() {
             </div>
             <div className="flex text-sm px-12 justify-between pt-12 mb-8">
               <div className="w-[48%]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                itaque nulla, officiis a, rerum eius in totam quaerat eaque
-                neque, maiores quisquam voluptas nisi eum vero ullam minus
+                As P2W ( Pay 2 Win ) becomes more prevalent in the gaming
+                sphere, it is my belief that we need an objective metric to
+                identify the scale correctly, so a singular person can determine
+                for themselves if that game is the right game for themselves.
               </div>
               <div className="w-[48%]">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-                modi accusamus, quaerat voluptatum perspiciatis atque doloribus
-                odio suscipit molestias fuga sit qui, assumenda
+                For P4T ( Pay 4 Time ), I think the same overlapping metrics can
+                be used to determine the rationale of worth to the player and to
+                see if the grind is worth it.
               </div>
             </div>
             <div className="mb-8">
               <button>Explore Metrics</button>
             </div>
             <div className="px-12 pb-[500px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
-              eveniet voluptate! Quia at atque voluptas quis distinctio ut
-              labore! Error ad sapiente voluptatem fuga rerum tenetur quod. Sit,
-              modi minima. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Eius, eveniet voluptate! Quia at atque voluptas quis
-              distinctio ut labore! Error ad sapiente voluptatem fuga rerum
-              tenetur quod. Sit, modi minima.
+              Establishing these two concepts, I believe we can create a
+              framework that can create some objective truths that can quantify
+              expectations before spending hundreds of hours into a game, then
+              realizing that it's a dipropionate hill.
             </div>
           </div>
           <div className="relative flex-1 flex pt-[200px]">
@@ -92,13 +90,7 @@ export default function LandingPage() {
               endZoneY={300}
               opacitySharpness={16}
               minOpacity={0.1}
-              text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
-                eveniet voluptate! Quia at atque voluptas quis distinctio ut
-                labore! Error ad sapiente voluptatem fuga rerum tenetur quod.
-                Sit, modi minima. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Eius, eveniet voluptate! Quia at atque
-                voluptas quis distinctio ut labore! Error ad sapiente voluptatem
-                fuga rerum tenetur quod. Sit, modi minima."
+              text="Embracing objectivity has to be the singular most important aspect of any truths esablished and after the initial obversations have been concluded.  The scoring of the different games will also have to be measured by different skill levels and through hard work creating results that can be replicable has to be something we strive for."
             ></RevealingText>
           </div>
         </SectionContentStyled>
