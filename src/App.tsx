@@ -6,7 +6,7 @@ import DefaultShell from "./pages/DefaultShell.component";
 import LandingPage from "./pages/Landing/Landing.page";
 import Terms from "./pages/Legal/Terms.page";
 import PrivacyPolicy from "./pages/Legal/Privacy.page";
-import Games from "./pages/Games/games.page";
+import Games from "./pages/Games/Games.page";
 import Metrics from "./pages/Metrics/Metrics.page";
 
 function App() {

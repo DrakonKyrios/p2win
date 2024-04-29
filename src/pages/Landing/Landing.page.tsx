@@ -19,7 +19,7 @@ export default function LandingPage() {
     <>
       <SectionContainerStyled className="flex flex-1">
         <LeftNavStyled>
-          <ul className="pt-14">
+          {/* <ul className="pt-14">
             <GameListItemStyled>
               <span>God of War</span>
             </GameListItemStyled>
@@ -35,7 +35,7 @@ export default function LandingPage() {
             <GameListItemStyled>
               <span>Diablo 4</span>
             </GameListItemStyled>
-          </ul>
+          </ul> */}
         </LeftNavStyled>
         <SectionContentStyled className="flex flex-row h-[1000px]">
           <div className="flex-1 pt-[200px]">
