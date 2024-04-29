@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import tw from "tailwind-styled-components";
 
 const DetailContentStyled = tw.div`flex-1 bg-primary-500 py-2 px-4  rounded-lg`;
@@ -5,22 +6,20 @@ const DetailContainerStyled = tw.div`flex mb-2`;
 const DetailIconStyled = tw.span`inline-block bg-loot-box bg-contain h-6 w-6 mr-2`;
 const DetailTitleStyled = tw.span`font-bold text-secondary-500 uppercase`;
 export const LandingInfo = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="flex relative pb-10">
         <div className="flex-1 flex items-center">
           <div>
             <div className="text-2xl font-bold mb-2">
-              This is about creating{" "}
-              <span className="text-secondary-500">Visibility</span>
+              {t("home.purpose.title.part1")}&nbsp;
+              <span className="text-secondary-500">
+                {t("home.purpose.title.part2")}
+              </span>
             </div>
-            <div className="pr-32">
-              Story, Difficulty, Entertaining, and Visuals are all things we can
-              enjoy discovering while playing any game, but P2W/P4T are factors
-              we would like to know before spending hours on end, then
-              discovering it wasn't worth the grind if there wasn't a chance to
-              begin with.
-            </div>
+            <div className="pr-32">{t("home.purpose.subTitle")}</div>
           </div>
         </div>
         <div className="flex-0 w-[200px] h-[200px] overflow-hidden rounded-full">
@@ -35,60 +34,66 @@ export const LandingInfo = () => {
         <DetailContentStyled>
           <DetailContainerStyled>
             <DetailIconStyled className="bg-loot-box"></DetailIconStyled>
-            <DetailTitleStyled>Metrics</DetailTitleStyled>
+            <DetailTitleStyled>
+              {t("home.purpose.reason1.title")}
+            </DetailTitleStyled>
           </DetailContainerStyled>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            aperiam repudiandae asperiores enim qui, in corrupti veritatis
-            possimus officia voluptate nostrum dolorum illo assumenda earum nisi
-            ex ipsa aspernatur exercitationem.
-          </div>
+          <div>{t("home.purpose.reason1.content")}</div>
         </DetailContentStyled>
         <DetailContentStyled>
           <DetailContainerStyled>
             <DetailIconStyled className="bg-loot-box"></DetailIconStyled>
-            <DetailTitleStyled>Balance</DetailTitleStyled>
+            <DetailTitleStyled>
+              {t("home.purpose.reason2.title")}
+            </DetailTitleStyled>
           </DetailContainerStyled>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            aperiam repudiandae asperiores enim qui, in corrupti veritatis
-            possimus officia voluptate nostrum dolorum illo assumenda earum nisi
-            ex ipsa aspernatur exercitationem.
-          </div>
+          <div>{t("home.purpose.reason2.content")}</div>
         </DetailContentStyled>
       </div>
       <div className="grid justify-between grid-cols-3 gap-4">
         <DetailContentStyled>
           <DetailContainerStyled>
             <DetailIconStyled className="bg-loot-box"></DetailIconStyled>
-            <DetailTitleStyled>Personal Prefrence</DetailTitleStyled>
+            <DetailTitleStyled>
+              {t("home.purpose.reason3.title")}
+            </DetailTitleStyled>
           </DetailContainerStyled>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            aperiam repudiandae asperiores enim qui, in corrupti veritatis
-            possimus officia voluptate nostrum dolorum illo assumenda earum nisi
-            ex ipsa aspernatur exercitationem.
-          </div>
+          <div>{t("home.purpose.reason3.content")}</div>
         </DetailContentStyled>
         <DetailContentStyled>
           <DetailContainerStyled>
             <DetailIconStyled className="bg-loot-box"></DetailIconStyled>
-            <DetailTitleStyled>Goals</DetailTitleStyled>
+            <DetailTitleStyled>
+              {t("home.purpose.reason4.title")}
+            </DetailTitleStyled>
           </DetailContainerStyled>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            aperiam repudiandae asperiores enim qui, in corrupti veritatis
-            possimus officia voluptate nostrum dolorum illo assumenda earum nisi
-            ex ipsa aspernatur exercitationem.
-          </div>
+          <div>{t("home.purpose.reason4.content")}</div>
         </DetailContentStyled>
         <DetailContentStyled className="border-2 border-gold relative">
           <div className=" text-4xl py-4">
-            <span className="text-secondary-500">P</span>ay 2 Win on a
+            <span className="text-secondary-500">
+              {t("home.purpose.content.line1")[0]}
+            </span>
+            {t("home.purpose.content.line1").substring(
+              1,
+              t("home.purpose.content.line1").length
+            )}
             <br />
-            <span className="text-secondary-500">B</span>alance scale
+            <span className="text-secondary-500">
+              {t("home.purpose.content.line2")[0]}
+            </span>
+            {t("home.purpose.content.line2").substring(
+              1,
+              t("home.purpose.content.line2").length
+            )}
             <br />
-            <span className="text-secondary-500">W</span>ith Purpose
+            <span className="text-secondary-500">
+              {t("home.purpose.content.line3")[0]}
+            </span>
+            {t("home.purpose.content.line3").substring(
+              1,
+              t("home.purpose.content.line3").length
+            )}
           </div>
           <div className="absolute right-8 bottom-4 h-[80px] w-[80px] bg-loot-box-white bg-contain bg-no-repeat" />
         </DetailContentStyled>

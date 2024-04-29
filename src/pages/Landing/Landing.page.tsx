@@ -5,11 +5,16 @@ import {
   SectionContentStyled,
 } from "../../components/share.styled";
 import { LandingInfo } from "./LandingInfo.component";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { ROUTE_METRIC } from "../../utilities/route.constants";
 
 const LeftNavStyled = tw.aside`absolute`;
 const GameListItemStyled = tw.li`text-black placeholder:block pr-4 border-0 [&>span]:bg-gold [&>span]:bprder-0 line-1 leading-[2.3rem] [&>span]:px-2 [&>span]:py-2 `;
 
 export default function LandingPage() {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
   return (
     <>
       <SectionContainerStyled className="flex flex-1">
@@ -42,31 +47,23 @@ export default function LandingPage() {
             </div>
             <div>
               <span className="text-4xl font-bold text-gray-800">
-                Pay != Victory
+                Pay ? Worth
               </span>
             </div>
             <div className="flex text-sm px-12 justify-between pt-12 mb-8">
-              <div className="w-[48%]">
-                As P2W ( Pay 2 Win ) becomes more prevalent in the gaming
-                sphere, it is my belief that we need an objective metric to
-                identify the scale correctly, so a singular person can determine
-                for themselves if that game is the right game for themselves.
-              </div>
-              <div className="w-[48%]">
-                For P4T ( Pay 4 Time ), I think the same overlapping metrics can
-                be used to determine the rationale of worth to the player and to
-                see if the grind is worth it.
-              </div>
+              <div className="w-[48%]">{t("home.main.left")}</div>
+              <div className="w-[48%]">{t("home.main.right")}</div>
             </div>
             <div className="mb-8">
-              <button>Explore Metrics</button>
+              <button
+                onClick={() => {
+                  navigate(ROUTE_METRIC);
+                }}
+              >
+                {t("home.main.button")}
+              </button>
             </div>
-            <div className="px-12 pb-[500px]">
-              Establishing these two concepts, I believe we can create a
-              framework that can create some objective truths that can quantify
-              expectations before spending hundreds of hours into a game, then
-              realizing that it's a dipropionate hill.
-            </div>
+            <div className="px-12 pb-[300px]">{t("home.main.bottom")}</div>
           </div>
           <div className="relative flex-1 flex pt-[200px]">
             <div className="bg-secondary-500  w-[410px] h-[400px] p-8 z-20">
@@ -90,7 +87,7 @@ export default function LandingPage() {
               endZoneY={300}
               opacitySharpness={16}
               minOpacity={0.1}
-              text="Embracing objectivity has to be the singular most important aspect of any truths esablished and after the initial obversations have been concluded.  The scoring of the different games will also have to be measured by different skill levels and through hard work creating results that can be replicable has to be something we strive for."
+              text={t("home.revealingText")}
             ></RevealingText>
           </div>
         </SectionContentStyled>
@@ -104,14 +101,7 @@ export default function LandingPage() {
         <SectionContentStyled>
           <div className="flex items-center">
             <div className="flex-1">
-              <div className="text-2xl">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
-                deleniti dolor reprehenderit incidunt aut cupiditate repellat
-              </div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
-              deleniti dolor reprehenderit incidunt aut cupiditate repellat
-              tenetur cumque odio quis? Id hic labore incidunt, impedit
-              similique nulla doloremque. Itaque, autem.
+              <div className="text-2xl">{t("home.exit")}</div>
             </div>
             <div className="flex-1">
               <div className="bg-loot-chest-multi w-full h-[340px] bg-no-repeat bg-contain bg-right" />

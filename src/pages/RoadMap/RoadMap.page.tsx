@@ -31,7 +31,7 @@ export const RoadMapPage = () => {
       name: "Add Metrics",
       type: 2,
       description:
-        "Looking to add first metric to determine if a game is pay 2 win or pay for time ",
+        "Looking to add first metric to determine if a game is Pay-2-win or Pay-4-time ",
     },
     {
       name: "Add First Game",
@@ -70,15 +70,14 @@ export const RoadMapPage = () => {
       id: 1,
       status: 30,
       slate: "2024-04-01",
-      title: "Add Pay for Win Metric",
-      description:
-        "Establish Parameters for determining weight for Pay for Win",
+      title: "Add Pay-2-Win Metric",
+      description: "Establish Parameters for determining weight for Pay-2-Win",
     },
     {
       id: 1,
       status: 30,
       slate: "2024-04-01",
-      title: "Establish Parameters for determining weight for Pay for Time",
+      title: "Establish Parameters for determining weight for Pay-4-Time",
       description: "",
     },
     {
@@ -93,15 +92,14 @@ export const RoadMapPage = () => {
       status: 20,
       slate: "2024-04-01",
       title: "Add Escape of Tarkov",
-      description:
-        "Add a game that dips into Pay For Win and Pay for Time lightly",
+      description: "Add a game that dips into Pay-2-Win and Pay-4-Time lightly",
     },
     {
       id: 1,
       status: 10,
       slate: "2024-07-01",
       title: "Add Diablo IV",
-      description: "Dive deeper into Pay for Win and Pay for Time division",
+      description: "Dive deeper into Pay-2-Win and Pay-4-Time division",
     },
     {
       id: 1,
