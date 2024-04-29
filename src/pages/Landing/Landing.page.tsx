@@ -1,4 +1,3 @@
-import tw from "tailwind-styled-components";
 import { RevealingText } from "@viewtech-labs/revealing-text";
 import {
   SectionContainerStyled,
@@ -9,34 +8,12 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { ROUTE_METRIC } from "../../utilities/route.constants";
 
-const LeftNavStyled = tw.aside`absolute`;
-const GameListItemStyled = tw.li`text-black placeholder:block pr-4 border-0 [&>span]:bg-gold [&>span]:bprder-0 line-1 leading-[2.3rem] [&>span]:px-2 [&>span]:py-2 `;
-
 export default function LandingPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   return (
     <>
       <SectionContainerStyled className="flex flex-1">
-        <LeftNavStyled>
-          {/* <ul className="pt-14">
-            <GameListItemStyled>
-              <span>God of War</span>
-            </GameListItemStyled>
-            <GameListItemStyled>
-              <span>League of Legends</span>
-            </GameListItemStyled>
-            <GameListItemStyled>
-              <span>Lost Ark</span>
-            </GameListItemStyled>
-            <GameListItemStyled>
-              <span>Escape from Tarkov</span>
-            </GameListItemStyled>
-            <GameListItemStyled>
-              <span>Diablo 4</span>
-            </GameListItemStyled>
-          </ul> */}
-        </LeftNavStyled>
         <SectionContentStyled className="flex flex-row h-[1000px]">
           <div className="flex-1 pt-[200px]">
             <div>
