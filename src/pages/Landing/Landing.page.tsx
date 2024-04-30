@@ -13,8 +13,8 @@ export default function LandingPage() {
   const navigate = useNavigate();
   return (
     <>
-      <SectionContainerStyled className="flex flex-1">
-        <SectionContentStyled className="flex flex-row h-[1000px]">
+      <SectionContainerStyled className="flex flex-1 pb-14">
+        <SectionContentStyled className="flex flex-row">
           <div className="flex-1 pt-[200px]">
             <div>
               <span className="text-4xl font-bold">Pay 2 Win.</span>
@@ -40,20 +40,17 @@ export default function LandingPage() {
                 {t("home.main.button")}
               </button>
             </div>
-            <div className="px-12 pb-[300px]">{t("home.main.bottom")}</div>
+            <div className="px-12">{t("home.main.bottom")}</div>
           </div>
           <div className="relative flex-1 flex pt-[200px]">
-            <div className="bg-secondary-500  w-[410px] h-[400px] p-8 z-20">
-              <span className="block bg-loot-box bg-cover bg-no-repeat w-full h-full" />
-              &nbsp;
-            </div>
-            <div className="bg-white  w-[300px] h-[600px] mt-[-100px] ml-[-100px] flex flex-col z-10">
+            <div className="opacity-30 w-[410px] h-[400px] p-8 z-20"></div>
+            <div className="bg-white   w-[300px] h-[600px] mt-[-100px] ml-[-100px] flex flex-col z-10">
               <span className="block bg-black bg-loot-chest-vector bg-contain bg-center bg-no-repeat flex-1" />
             </div>
           </div>
         </SectionContentStyled>
       </SectionContainerStyled>
-      <SectionContainerStyled className="pb-[200px]">
+      <SectionContainerStyled className="pb-24">
         <SectionContentStyled>
           <div className="">
             <RevealingText

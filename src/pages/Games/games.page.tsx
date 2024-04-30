@@ -9,10 +9,12 @@ interface GameNavItemProps {
   selected: boolean;
 }
 
-const GameNavItem = tw.div<GameNavItemProps>`font-bold text-primary-400 ${(
+const GameNavItem = tw.div<GameNavItemProps>`font-bold p-2 border-l-2 border-b-2 border-b-primary-800  ${(
   props
 ) =>
-  props.selected ? "bg-primary-600 text-white px-4" : "text-primary-400 px-2"}`;
+  props.selected
+    ? "bg-primary-600 text-white px-4 border-l-secondary-500"
+    : "text-primary-400 px-2"}`;
 
 export default function Games() {
   const [selection, setSelection] = useState("eft");
