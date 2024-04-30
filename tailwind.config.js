@@ -50,6 +50,7 @@ module.exports = {
         "loot-chest-emerald": "url('./assets/images/loot-emerald.png')",
         "loot-chest-multi": "url('./assets/images/lood-multi.png')",
         "loot-chest-science": "url('./assets/images/loot-science.png')",
+        "loot-logo": "url('./assets/images/p2w-logo.png')",
       },
     },
   },

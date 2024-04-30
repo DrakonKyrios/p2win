@@ -1,7 +1,7 @@
 import tw from "tailwind-styled-components";
 import { Link, useLocation } from "react-router-dom";
 import { useCallback } from "react";
-import viteLogo from "/vite.svg";
+
 import {
   ROUTE_BASE,
   ROUTE_GAMES,
@@ -16,7 +16,7 @@ interface RouteProps {
   active: boolean;
 }
 
-const LogoBlockStyled = tw.span`inline-block p-4 bg-secondary-500 h-20 w-20 [&>img]:h-full `;
+const LogoBlockStyled = tw.span`flex bg-secondary-500 h-20 w-20 items-center justify-center `;
 const RouteItem = tw.li<RouteProps>`inline-block pb-2 ${(props) =>
   props.active ? "border-gold route-active border-b-2" : ""}`;
 
@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <header className="h-20 flex">
       <LogoBlockStyled>
-        <img src={viteLogo} />
+        <div className="bg-loot-logo bg-contain bg-no-repeat h-14 w-14 bg-center"></div>
       </LogoBlockStyled>
       <div className="flex-1 flex justify-center items-center">
         <span className="inline-block font-bold px-6 pb-2">
